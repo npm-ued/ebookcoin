@@ -24,7 +24,7 @@ program
 	.option('-b, --blockchain <path>', 'Blockchain db path')
 	.option('-x, --peers [peers...]', 'Peers list')
 	.option('-l, --log <level>', 'Log level')
-	.parse(process.argv);
+	.parse(process.argv); //获取命令行参数
 
 if (typeof gc !== 'undefined') {
 	setInterval(function () {
